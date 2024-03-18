@@ -4,9 +4,11 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite --host 0.0.0.0 --port 4000",
+        "dev": "vite --host ",
         "build": "vite build",
-        "preview": "vite preview"
+        "preview": "vite preview --port 5050",
+        "test:unit": "vitest --environment jsdom",
+        "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
     },
     "dependencies": {
         "@emotion/react": "^11.10.6",
