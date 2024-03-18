@@ -6,8 +6,9 @@
     "scripts": {
         "dev": "react-scripts",
         "start": "react-scripts start",
-        "build": "react-scripts build ",
+        "build": "babel src -d lib",
         "preview": "react-scripts preview",
+        "prebuild": "jest",
         "test": "react-scripts test",
         "eject": "react-scripts eject"
     },
